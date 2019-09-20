@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+   
+    <style>
+    h3{
+      font-family: 'Chilanka', cursive;
+    }
+    p,a,h4 ,button{
+      font-family: 'Satisfy', cursive;
+      letter-spacing: 1px;
+    }
+    img{
+      border-radius: 5px;
+    }
+    .fa{
+      padding: 20px;
+    }
+    iframe{
+    margin-bottom: -25px;
+        margin-top: -20px;
+
+    }
+    .carouselcarousel-item {
+      height:450px;
+    }
+    @media(max-width:1200px){
+      iframe{
+      display:none;
+      }
+    }
+@media(max-width:440px)
+{
+  .carousel.carousel-slider .carousel-fixed-item.with-indicators {
+    bottom: 55px;
+  }
+
+  .carousel h3{
+    font-size: 10vw;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav class=" brown lighten-1">
+    <div class="nav-wrapper container ">
+      <a href="#!" class="brand-logo">CoeCafe</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#contact">Contact</a></li> 
+  </ul>
+      <!--  Responsive navbar end-->
+         <div class="carousel carousel-slider " id="home">
+     
+    <a class="carousel-item " href="#"><img class="responsive-img" src="images/slider1.jpg" ></a>
+    <div class="carousel-fixed-item center">
+        <h3 class="white-text">Welcome to our Cafe</h3>
+        <a  href="#contact" class="waves-effect waves-light btn brown"><i class="material-icons right">bookmark</i>Reserve A Table</a>
+       </div>
+    <a class="carousel-item" href="#"><img class="responsive-img"  src="images/slider2.jpg"></a>
+    <a class="carousel-item" href="#"><img  class="responsive-img" src="images/slider3.jpg" ></a>
+  </div>
+          <!--  slider  start-->
+  <section id="about">
+          <div class="row ">
+            <h3  class="center">About Us</h3>
+            <div class="col s12 m6 l4"><img  class="responsive-img" src="images/img1.jpg"  width="500px"height="200px" ></div>
+            <div class="col s12 m6 l4"><img  class="responsive-img"src="images/img2.jpg"  width="500px"  height="200px" ></div>
+            <div class="col s12 m6 l4 ">
+                <h4 class="center ">The Cafe</h4>
+                <p class="">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+            </div>
+                           </div>
+        </section>
+        <section>
+            <div class="row container">
+              <h3  class="center">Menu</h3>
+              <ul class="collapsible">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">local_cafe</i>Espresso</div>
+                    <div class="collapsible-body"><span>
+                      <p></i>Americano</p>
+                      <p> Mint Chocolate</p>
+                      <p>Mocha</p>
+                      <p>Latte</p>
+                    </span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">favorite</i>Ice Blended</div>
+                    <div class="collapsible-body"><span>
+                      <p>Caramel</p>
+                      <p>Cofee Jelly</p>
+                      <p>Matcha Cream</p>
+                    </span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Tea</div>
+                    <div class="collapsible-body"><span>
+                    <p>Earl Grey</p>
+                    <p>Green Tea</p>
+                    <p>Jasmine Tea</p>
+                    </span></div>
+                  </li>
+                </ul>
+                      
+              </div>
+                            
+          </section >
+          <section id="gallery" >
+              <div class="row ">
+                <h3  class="center">Gallery</h3>
+                <div class="col s12 m6 l4">
+                <a href="images/img4.jpg"   data-lightbox="mygallery" data-title="CoeCafe"><img  src="images/img4.jpg" class="responsive-img"></a> 
+                <div class="overlay-3"> <h4>
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+
+                <a href="images/img10.jpg"   data-lightbox="mygallery" data-title="CoeCafe" > <img  src="images/img10.jpg" class="responsive-img"  ></a>
+
+              </div>
+                <div class="col s12 m6 l4">
+                  <a href="images/img6.jpg"   data-lightbox="mygallery" data-title="CoeCafe" > <img  src="images/img6.jpg"    class="responsive-img"  ></a>
+                  
+   
+                  <a href="images/img7.jpg"   data-lightbox="mygallery" data-title="CoeCafe" >  <img  src="images/img7.jpg"   class="responsive-img"   ></a>
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <a href="images/img11.jpg"   data-lightbox="mygallery" data-title="CoeCafe" ><img  src="images/img11.jpg"  class="responsive-img"   ></a>
+                    
+                    <a href="images/img9.jpg"   data-lightbox="mygallery"  data-title="CoeCafe"><img  src="images/img9.jpg"  class="responsive-img"   ></a>
+                    </div>
+               
+               
+                </div>
+                               
+                              </section>
+
+            <section class="grey lighten-4" id="events">
+              <div class="row ">
+                <h3  class="center" style="padding: 20px;">Events</h3>
+                <div class="col s12 m6 l4">
+                  <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/img3.jpg"class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Birthday Party<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#contact">Book Now</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Birthday Party<i class="material-icons right">close</i></span>
+                      <p> We can also oraganize birthday party for you in our coecafe</p>
+                    </div>
+                                         </div>
+                                          </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="images/img5.jpg" class="responsive-img">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Cafe Party<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#contact">Book Now</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Cafe Party<i class="material-icons right">close</i></span>
+                          <p> We can also oraganize cafe party for you   in our coecafe</p>
+                        </div>
+                                                         </div>
+                                                               </div>
+                  <div class="col s12 m6 l4">
+                      <div class="card">
+                          <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/img8.jpg" class="responsive-img"  >
+                          </div>
+                          <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Professional Party<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#contact">Book Now</a></p>
+                          </div>
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Professional Party<i class="material-icons right">close</i></span>
+                            <p> We can also oraganize professional party for you  in our coecafe</p>
+                          </div>
+                        </div>
+                                     </div>
+               
+               
+                            </div>
+                               
+            </section>
+            <section id="contact">
+                <div class="row ">
+                  <div class="col s12 m6 l6 ">
+      <form class="col s12 " method="POST" netlify>
+        <div class="row">
+          <div class="input-field col s12 ">
+            <input placeholder="Name" id="first_name" type="text" class="validate" name="name">
+                           </div>
+          <div class="input-field col s12">
+            <input id="email"  placeholder="Email"type="email" class="validate" name="email">
+                    </div>
+        
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1"  placeholder="Textarea"class="materialize-textarea" name="comment"></textarea>
+                     </div>
+                                      </div>
+                <button type="submit" class="waves-effect waves-light btn large brown lighten-3" >Send Message</button>
+            
+            </div>
+      </form>
+    </div>
+
+
+                  <div class="col s12 m6 l6 ">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55831.092629097184!2d77.66237742615458!3d29.003863561681456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c65a70845cdcb%3A0xee2f00dda6001417!2sMeerut%20Cantt%2C%20Meerut%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1568832621982!5m2!1sen!2sin" width="663" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    
+                 
+                
+                                 
+                                </section>
+                                <footer  style="overflow:hidden"class="page-footer grey lighten-3">
+                                    <div class="container ">
+                                      <div class="row">
+                                        <div class="col l12 s12 center" >
+                                            <a href="#" ><i class="fa fa-facebook fa-2x brown-text text-lighten-3"></i></a>
+                                            <a href="#"><i class=" fa fa-twitter fa-2x  brown-text text-lighten-3"></i></a>
+                                            <a href="#"><i class=" fa fa-instagram fa-2x brown-text text-lighten-3"></i></a>
+                                            <a href="#" ><i class=" fa fa-phone fa-2x  brown-text text-lighten-3"></i></a>
+                                         
+                                        </div>
+                                        <div class="row">
+                                          <h6 class="brown-text text-lighten-1 center"> We will  provide best service to our clients and customers</h6>
+                                        
+                                        </div>
+                                      </div>
+                                    </div>
+                                   
+                                  </footer>
+
+            
+    <script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators:true,
+    duration:50
+  });
+  $('.collapsible').collapsible();
+  });
+    </script>
+     <script src="lightbox.min.js"></script>
+</body>
+</html>
