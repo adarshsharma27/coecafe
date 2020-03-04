@@ -11,7 +11,7 @@
     height: 285px;
     position: absolute;
     opacity: 1;
-    z-index: 999;
+    z-index: 900;
     left: 10px;
     top: 0px;
     display: flex;
@@ -26,4 +26,13 @@ transition: all 1.5s ease;
     opacity:0;
     display:none;
     
+}
+@media(max-width:375px){
+.overlay-3{
+    width: 340px;
+    height: 226px;
+    border-radius: 5px;
+
+}
+
 }
